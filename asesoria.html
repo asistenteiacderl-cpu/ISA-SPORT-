@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asesoría de Estilo | ISA'SPORT - Ropa Deportiva Femenina Premium</title>
+  <meta name="description" content="Encuentra las prendas deportivas ideales para tu figura y tus metas fitness. Completa nuestro test interactivo y recibe asesoría de estilo personalizada.">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Top Navigation Header -->
+  <header>
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        ISA'<span>SPORT</span>
+      </a>
+      
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Inicio</a></li>
+        <li><a href="nosotros.html" class="nav-link">Nosotros</a></li>
+        <li><a href="catalogo.html" class="nav-link">Catálogo</a></li>
+        <li><a href="asesoria.html" class="nav-link active">Asesoría de Estilo</a></li>
+        <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+      </ul>
+      
+      <div class="nav-actions">
+        <button class="cart-icon-btn" id="cartToggle" title="Ver pedido">
+          <i class="fas fa-shopping-bag"></i>
+          <span class="cart-count">0</span>
+        </button>
+        <button class="mobile-toggle" aria-label="Abrir menú">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Intro -->
+  <section class="page-intro">
+    <div class="container">
+      <h1 class="gradient-text">Asesoría Personalizada</h1>
+      <p>Creemos que la ropa deportiva debe adaptarse a tu cuerpo, no al revés. Completa el test a continuación para descubrir tus prendas ideales.</p>
+    </div>
+  </section>
+
+  <!-- Interactive Style Advisor Quiz Container -->
+  <section class="quiz-section">
+    <div class="container">
+      
+      <div class="quiz-container">
+        
+        <!-- Progress Bar Indicator -->
+        <div class="quiz-progress">
+          <div class="quiz-progress-bar" id="quizProgress"></div>
+        </div>
+        
+        <!-- STEP 1: Body Shape -->
+        <div class="quiz-step active" data-quiz-category="cuerpo">
+          <h2 class="quiz-title">1. ¿Cuál es tu silueta o tipo de cuerpo?</h2>
+          
+          <div class="quiz-grid">
+            <div class="quiz-card" data-value="Reloj de Arena">
+              <div class="quiz-card-icon"><i class="fas fa-sync-alt"></i></div>
+              <h3>Reloj de Arena</h3>
+              <p>Hombros y caderas de ancho similar, con una cintura bastante definida.</p>
+            </div>
+            
+            <div class="quiz-card" data-value="Pera">
+              <div class="quiz-card-icon"><i class="fas fa-caret-up"></i></div>
+              <h3>Pera / Triángulo</h3>
+              <p>Caderas más anchas que los hombros, cintura bien delineada.</p>
+            </div>
+            
+            <div class="quiz-card" data-value="Rectángulo">
+              <div class="quiz-card-icon"><i class="fas fa-columns"></i></div>
+              <h3>Rectángulo</h3>
+              <p>Hombros, cintura y caderas tienen un ancho muy similar.</p>
+            </div>
+            
+            <div class="quiz-card" data-value="Triángulo Invertido">
+              <div class="quiz-card-icon"><i class="fas fa-caret-down"></i></div>
+              <h3>Triángulo Invertido</h3>
+              <p>Hombros visiblemente más anchos que la línea de tus caderas.</p>
+            </div>
+          </div>
+          
+          <div class="quiz-nav-buttons" style="justify-content: flex-end;">
+            <button class="btn btn-primary next-step-btn" disabled>Continuar <i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+        
+        <!-- STEP 2: Goal -->
+        <div class="quiz-step" data-quiz-category="objetivo">
+          <h2 class="quiz-title">2. ¿Cuál es tu principal actividad física o meta?</h2>
+          
+          <div class="quiz-grid">
+            <div class="quiz-card" data-value="Fuerza y Gimnasio">
+              <div class="quiz-card-icon"><i class="fas fa-dumbbell"></i></div>
+              <h3>Fuerza & Gimnasio</h3>
+              <p>Pesas, máquinas, entrenamiento de resistencia y rutinas en sala fitness.</p>
+            </div>
+            
+            <div class="quiz-card" data-value="Cardio y Running">
+              <div class="quiz-card-icon"><i class="fas fa-running"></i></div>
+              <h3>Cardio & Running</h3>
+              <p>Correr, trotar, ciclismo, rutinas aeróbicas y saltar la cuerda.</p>
+            </div>
+            
+            <div class="quiz-card" data-value="Yoga y Bienestar">
+              <div class="quiz-card-icon"><i class="fas fa-spa"></i></div>
+              <h3>Yoga, Pilates & Estiramiento</h3>
+              <p>Enfoque en flexibilidad, respiración, posturas suaves y comodidad.</p>
+            </div>
+            
+            <div class="quiz-card" data-value="Uso Casual y Confort">
+              <div class="quiz-card-icon"><i class="fas fa-home"></i></div>
+              <h3>Estilo Casual / Diario</h3>
+              <p>Busco comodidad superior para mi día a día, hacer mandados o teletrabajo.</p>
+            </div>
+          </div>
+          
+          <div class="quiz-nav-buttons">
+            <button class="btn btn-secondary prev-step-btn"><i class="fas fa-arrow-left"></i> Atrás</button>
+            <button class="btn btn-primary next-step-btn" disabled>Continuar <i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+        
+        <!-- STEP 3: Style Preferences -->
+        <div class="quiz-step" data-quiz-category="estilo">
+          <h2 class="quiz-title">3. ¿Qué buscas principalmente en tus prendas?</h2>
+          
+          <div class="quiz-grid">
+            <div class="quiz-card" data-value="Soporte Firme y Moldeo">
+              <div class="quiz-card-icon"><i class="fas fa-shield-alt"></i></div>
+              <h3>Soporte Firme & Compresión</h3>
+              <p>Prendas que se ajusten con firmeza y esculpan la silueta del cuerpo.</p>
+            </div>
+            
+            <div class="quiz-card" data-value="Libertad y Suavidad">
+              <div class="quiz-card-icon"><i class="fas fa-feather"></i></div>
+              <h3>Ligereza y Tacto Suave</h3>
+              <p>Materiales ultra suaves, elásticos y que se sientan como una segunda piel.</p>
+            </div>
+          </div>
+          
+          <div class="quiz-nav-buttons">
+            <button class="btn btn-secondary prev-step-btn"><i class="fas fa-arrow-left"></i> Atrás</button>
+            <button class="btn btn-primary next-step-btn finish-quiz" disabled>Calcular Recomendaciones <i class="fas fa-magic"></i></button>
+          </div>
+        </div>
+        
+        <!-- RESULT SCREEN -->
+        <div class="quiz-result" id="quizResult">
+          <div class="quiz-result-icon"><i class="fas fa-check-circle"></i></div>
+          <span class="result-badge" id="recBadge">Colección Recomendada</span>
+          <h2>¡Hemos encontrado tu combinación ideal!</h2>
+          <p style="color: var(--text-secondary); max-width: 600px; margin: 0 auto 2rem auto;">
+            Según tus respuestas, estas prendas de tecnología seamless son las que mejor se adaptan a tu silueta y tipo de actividad, brindándote el mejor balance de soporte y estilo.
+          </p>
+          
+          <div class="result-recs-grid" id="recProductsGrid">
+            <!-- Dynamic recommendation cards will load here -->
+          </div>
+          
+          <div style="display: flex; gap: 1.5rem; justify-content: center; margin-top: 3rem;">
+            <button class="btn btn-secondary" id="quizRestart"><i class="fas fa-redo"></i> Hacer de Nuevo</button>
+            <button class="btn btn-primary" id="orderQuizBtn">Ordenar Outfit por WhatsApp <i class="fab fa-whatsapp"></i></button>
+          </div>
+        </div>
+        
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- Shopping Cart Drawer (Right Sidebar) -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <div class="cart-drawer" id="cartDrawer">
+    <div class="cart-header">
+      <h3>Tu Pedido</h3>
+      <button class="cart-close-btn" id="cartClose" aria-label="Cerrar carrito">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <!-- Items dynamically added here -->
+    </div>
+    <div class="cart-footer">
+      <div class="cart-summary-row">
+        <span>Total Estimado:</span>
+        <span class="cart-total-price" id="cartTotal">L 0.00</span>
+      </div>
+      <button class="btn btn-primary" id="checkoutBtn" style="width: 100%;">
+        Confirmar Pedido por WhatsApp <i class="fab fa-whatsapp"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Floating WhatsApp Bubble -->
+  <a href="https://wa.me/50433246387?text=Hola%20ISA'SPORT!%20Me%20gustar%C3%ADa%20solicitar%20asesor%C3%ADa%20sobre%20tus%20prendas." class="whatsapp-floating" target="_blank" title="Escríbenos por WhatsApp" aria-label="Chat de WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo" style="margin-bottom: 1rem;">
+          ISA'<span>SPORT</span>
+        </a>
+        <p>Moda deportiva premium sin costuras que se adapta a tu cuerpo y potencia tu bienestar físico y emocional.</p>
+        <div class="footer-socials">
+          <a href="https://instagram.com" class="social-link" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://facebook.com" class="social-link" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://tiktok.com" class="social-link" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+      
+      <div class="footer-links">
+        <h4>Explorar</h4>
+        <ul class="footer-links-list">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="asesoria.html">Asesoría de Estilo</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-newsletter">
+        <h4>Boletín Activo</h4>
+        <p>Regístrate para enterarte antes que nadie de los nuevos ingresos y promociones exclusivas.</p>
+        <form class="newsletter-form" onsubmit="event.preventDefault(); alert('¡Gracias por registrarte!'); this.reset();">
+          <input type="email" placeholder="Tu correo electrónico" required aria-label="Email para boletín">
+          <button type="submit" aria-label="Enviar"><i class="fas fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </div>
+    
+    <div class="container footer-bottom">
+      <p>&copy; 2026 <span>ISA'SPORT</span>. Todos los derechos reservados.</p>
+      <p>Emprendimiento impulsado por <span>EMPRENDE CITE Comayagua</span> & <span>AECID</span></p>
+    </div>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>
